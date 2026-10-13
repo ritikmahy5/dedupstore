@@ -1,0 +1,116 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_FlatTableLookupMiss",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042611Z-8dd74df-d0023-BM_FlatTableLookupMiss",
+ "samples": [
+  {
+   "counters": {
+    "BM_FlatTableLookupMiss/40.items_per_second": 19029349.295037877,
+    "BM_FlatTableLookupMiss/40.real_time_ns": 52.685254273842546,
+    "BM_FlatTableLookupMiss/60.items_per_second": 12020863.952204859,
+    "BM_FlatTableLookupMiss/60.real_time_ns": 83.42237911604383,
+    "BM_FlatTableLookupMiss/75.items_per_second": 9173696.596701901,
+    "BM_FlatTableLookupMiss/75.real_time_ns": 109.34676844572235
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupMiss/40.items_per_second": 18817931.370732516,
+    "BM_FlatTableLookupMiss/40.real_time_ns": 53.278851971000734,
+    "BM_FlatTableLookupMiss/60.items_per_second": 12025728.990195552,
+    "BM_FlatTableLookupMiss/60.real_time_ns": 83.4573782544439,
+    "BM_FlatTableLookupMiss/75.items_per_second": 9168589.173228016,
+    "BM_FlatTableLookupMiss/75.real_time_ns": 109.44460354091623
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupMiss/40.items_per_second": 18761595.442462094,
+    "BM_FlatTableLookupMiss/40.real_time_ns": 53.456202969148165,
+    "BM_FlatTableLookupMiss/60.items_per_second": 12017315.73510894,
+    "BM_FlatTableLookupMiss/60.real_time_ns": 83.53577815994328,
+    "BM_FlatTableLookupMiss/75.items_per_second": 9174527.056082403,
+    "BM_FlatTableLookupMiss/75.real_time_ns": 109.43079191794858
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupMiss/40.items_per_second": 18820350.15919328,
+    "BM_FlatTableLookupMiss/40.real_time_ns": 53.27004965628051,
+    "BM_FlatTableLookupMiss/60.items_per_second": 12009048.523053236,
+    "BM_FlatTableLookupMiss/60.real_time_ns": 83.58844228728027,
+    "BM_FlatTableLookupMiss/75.items_per_second": 9172873.26767046,
+    "BM_FlatTableLookupMiss/75.real_time_ns": 109.35258677343461
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupMiss/40.items_per_second": 18788613.552765377,
+    "BM_FlatTableLookupMiss/40.real_time_ns": 53.41229031762092,
+    "BM_FlatTableLookupMiss/60.items_per_second": 12012712.252362344,
+    "BM_FlatTableLookupMiss/60.real_time_ns": 83.48623194664776,
+    "BM_FlatTableLookupMiss/75.items_per_second": 9173317.042205058,
+    "BM_FlatTableLookupMiss/75.real_time_ns": 109.34754225182006
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_FlatTableLookupMiss/40.items_per_second": 19029349.295037877,
+   "BM_FlatTableLookupMiss/40.real_time_ns": 53.456202969148165,
+   "BM_FlatTableLookupMiss/60.items_per_second": 12025728.990195552,
+   "BM_FlatTableLookupMiss/60.real_time_ns": 83.58844228728027,
+   "BM_FlatTableLookupMiss/75.items_per_second": 9174527.056082403,
+   "BM_FlatTableLookupMiss/75.real_time_ns": 109.44460354091623,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_FlatTableLookupMiss/40.items_per_second": 18817931.370732516,
+   "BM_FlatTableLookupMiss/40.real_time_ns": 53.278851971000734,
+   "BM_FlatTableLookupMiss/60.items_per_second": 12017315.73510894,
+   "BM_FlatTableLookupMiss/60.real_time_ns": 83.48623194664776,
+   "BM_FlatTableLookupMiss/75.items_per_second": 9173317.042205058,
+   "BM_FlatTableLookupMiss/75.real_time_ns": 109.35258677343461,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_FlatTableLookupMiss/40.items_per_second": 18761595.442462094,
+   "BM_FlatTableLookupMiss/40.real_time_ns": 52.685254273842546,
+   "BM_FlatTableLookupMiss/60.items_per_second": 12009048.523053236,
+   "BM_FlatTableLookupMiss/60.real_time_ns": 83.42237911604383,
+   "BM_FlatTableLookupMiss/75.items_per_second": 9168589.173228016,
+   "BM_FlatTableLookupMiss/75.real_time_ns": 109.34676844572235,
+   "wall_s": 0
+  }
+ }
+}

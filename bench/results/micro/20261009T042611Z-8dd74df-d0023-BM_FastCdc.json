@@ -1,0 +1,164 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_FastCdc",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042611Z-8dd74df-d0023-BM_FastCdc",
+ "samples": [
+  {
+   "counters": {
+    "BM_FastCdc/1048576.bytes_per_second": 3341083875.4013705,
+    "BM_FastCdc/1048576.real_time_ns": 20132768.453497972,
+    "BM_FastCdc/16384.bytes_per_second": 3258641357.6845784,
+    "BM_FastCdc/16384.real_time_ns": 20641257.67826815,
+    "BM_FastCdc/2048.bytes_per_second": 3155288245.503376,
+    "BM_FastCdc/2048.real_time_ns": 21317256.304124992,
+    "BM_FastCdc/4096.bytes_per_second": 3176593415.0393004,
+    "BM_FastCdc/4096.real_time_ns": 21185464.48676198,
+    "BM_FastCdc/65536.bytes_per_second": 3307175978.204861,
+    "BM_FastCdc/65536.real_time_ns": 20348237.231647704,
+    "BM_FastCdc/8192.bytes_per_second": 3200309214.5576644,
+    "BM_FastCdc/8192.real_time_ns": 21017362.243693434
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FastCdc/1048576.bytes_per_second": 3339102101.7881403,
+    "BM_FastCdc/1048576.real_time_ns": 20145492.80117665,
+    "BM_FastCdc/16384.bytes_per_second": 3256962873.403414,
+    "BM_FastCdc/16384.real_time_ns": 20655840.64214764,
+    "BM_FastCdc/2048.bytes_per_second": 3155845717.577053,
+    "BM_FastCdc/2048.real_time_ns": 21312287.73346679,
+    "BM_FastCdc/4096.bytes_per_second": 3178102955.6032615,
+    "BM_FastCdc/4096.real_time_ns": 21184524.23901269,
+    "BM_FastCdc/65536.bytes_per_second": 3306825770.9436345,
+    "BM_FastCdc/65536.real_time_ns": 20341627.881862223,
+    "BM_FastCdc/8192.bytes_per_second": 3204887760.6624494,
+    "BM_FastCdc/8192.real_time_ns": 20987942.51144158
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FastCdc/1048576.bytes_per_second": 3345119749.4812384,
+    "BM_FastCdc/1048576.real_time_ns": 20106277.20238907,
+    "BM_FastCdc/16384.bytes_per_second": 3260891572.436528,
+    "BM_FastCdc/16384.real_time_ns": 20634356.290375922,
+    "BM_FastCdc/2048.bytes_per_second": 3151677346.11578,
+    "BM_FastCdc/2048.real_time_ns": 21341790.2123183,
+    "BM_FastCdc/4096.bytes_per_second": 3176765299.308439,
+    "BM_FastCdc/4096.real_time_ns": 21175999.215550043,
+    "BM_FastCdc/65536.bytes_per_second": 3308273457.5636287,
+    "BM_FastCdc/65536.real_time_ns": 20352954.82560554,
+    "BM_FastCdc/8192.bytes_per_second": 3205545700.2391334,
+    "BM_FastCdc/8192.real_time_ns": 20981131.33318045
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FastCdc/1048576.bytes_per_second": 3340900650.829589,
+    "BM_FastCdc/1048576.real_time_ns": 20139389.05937331,
+    "BM_FastCdc/16384.bytes_per_second": 3262140106.704277,
+    "BM_FastCdc/16384.real_time_ns": 20620300.99606251,
+    "BM_FastCdc/2048.bytes_per_second": 3157612689.0205626,
+    "BM_FastCdc/2048.real_time_ns": 21300134.57358335,
+    "BM_FastCdc/4096.bytes_per_second": 3175033272.9802036,
+    "BM_FastCdc/4096.real_time_ns": 21193268.518386915,
+    "BM_FastCdc/65536.bytes_per_second": 3307218252.9209247,
+    "BM_FastCdc/65536.real_time_ns": 20358781.357679296,
+    "BM_FastCdc/8192.bytes_per_second": 3203129514.1113377,
+    "BM_FastCdc/8192.real_time_ns": 21003757.243637335
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FastCdc/1048576.bytes_per_second": 3342816669.8954,
+    "BM_FastCdc/1048576.real_time_ns": 20126189.630744714,
+    "BM_FastCdc/16384.bytes_per_second": 3260182121.5192375,
+    "BM_FastCdc/16384.real_time_ns": 20642630.9681881,
+    "BM_FastCdc/2048.bytes_per_second": 3156445369.4995127,
+    "BM_FastCdc/2048.real_time_ns": 21307882.246081576,
+    "BM_FastCdc/4096.bytes_per_second": 3176636087.0444775,
+    "BM_FastCdc/4096.real_time_ns": 21178720.11678463,
+    "BM_FastCdc/65536.bytes_per_second": 3310456784.479215,
+    "BM_FastCdc/65536.real_time_ns": 20334828.412160277,
+    "BM_FastCdc/8192.bytes_per_second": 3207591310.0382895,
+    "BM_FastCdc/8192.real_time_ns": 20975420.942925144
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_FastCdc/1048576.bytes_per_second": 3345119749.4812384,
+   "BM_FastCdc/1048576.real_time_ns": 20145492.80117665,
+   "BM_FastCdc/16384.bytes_per_second": 3262140106.704277,
+   "BM_FastCdc/16384.real_time_ns": 20655840.64214764,
+   "BM_FastCdc/2048.bytes_per_second": 3157612689.0205626,
+   "BM_FastCdc/2048.real_time_ns": 21341790.2123183,
+   "BM_FastCdc/4096.bytes_per_second": 3178102955.6032615,
+   "BM_FastCdc/4096.real_time_ns": 21193268.518386915,
+   "BM_FastCdc/65536.bytes_per_second": 3310456784.479215,
+   "BM_FastCdc/65536.real_time_ns": 20358781.357679296,
+   "BM_FastCdc/8192.bytes_per_second": 3207591310.0382895,
+   "BM_FastCdc/8192.real_time_ns": 21017362.243693434,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_FastCdc/1048576.bytes_per_second": 3341083875.4013705,
+   "BM_FastCdc/1048576.real_time_ns": 20132768.453497972,
+   "BM_FastCdc/16384.bytes_per_second": 3260182121.5192375,
+   "BM_FastCdc/16384.real_time_ns": 20641257.67826815,
+   "BM_FastCdc/2048.bytes_per_second": 3155845717.577053,
+   "BM_FastCdc/2048.real_time_ns": 21312287.73346679,
+   "BM_FastCdc/4096.bytes_per_second": 3176636087.0444775,
+   "BM_FastCdc/4096.real_time_ns": 21184524.23901269,
+   "BM_FastCdc/65536.bytes_per_second": 3307218252.9209247,
+   "BM_FastCdc/65536.real_time_ns": 20348237.231647704,
+   "BM_FastCdc/8192.bytes_per_second": 3204887760.6624494,
+   "BM_FastCdc/8192.real_time_ns": 20987942.51144158,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_FastCdc/1048576.bytes_per_second": 3339102101.7881403,
+   "BM_FastCdc/1048576.real_time_ns": 20106277.20238907,
+   "BM_FastCdc/16384.bytes_per_second": 3256962873.403414,
+   "BM_FastCdc/16384.real_time_ns": 20620300.99606251,
+   "BM_FastCdc/2048.bytes_per_second": 3151677346.11578,
+   "BM_FastCdc/2048.real_time_ns": 21300134.57358335,
+   "BM_FastCdc/4096.bytes_per_second": 3175033272.9802036,
+   "BM_FastCdc/4096.real_time_ns": 21175999.215550043,
+   "BM_FastCdc/65536.bytes_per_second": 3306825770.9436345,
+   "BM_FastCdc/65536.real_time_ns": 20334828.412160277,
+   "BM_FastCdc/8192.bytes_per_second": 3200309214.5576644,
+   "BM_FastCdc/8192.real_time_ns": 20975420.942925144,
+   "wall_s": 0
+  }
+ }
+}

@@ -1,0 +1,75 @@
+# CI (TESTING.md section 2): runs on every push and pull request. Locally, the same presets are the
+# definition of "passes".
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    name: linux ${{ matrix.compiler }} ${{ matrix.preset }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [gcc, clang]
+        preset: [debug, asan, tsan]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y ninja-build clang
+      - name: Allow ThreadSanitizer's memory layout
+        # TSan fails to start with the kernel's default mmap randomization on recent Ubuntu.
+        run: sudo sysctl vm.mmap_rnd_bits=28
+      - name: Select compiler
+        run: |
+          if [ "${{ matrix.compiler }}" = gcc ]; then
+            echo "CC=gcc" >> "$GITHUB_ENV"; echo "CXX=g++" >> "$GITHUB_ENV"
+          else
+            echo "CC=clang" >> "$GITHUB_ENV"; echo "CXX=clang++" >> "$GITHUB_ENV"
+          fi
+      - run: cmake --preset ${{ matrix.preset }} -DDDS_WERROR=ON
+      - run: cmake --build --preset ${{ matrix.preset }}
+      - run: ctest --preset ${{ matrix.preset }}
+
+  macos:
+    name: macos ${{ matrix.preset }}
+    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        preset: [debug, asan]
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install ninja
+      - run: cmake --preset ${{ matrix.preset }} -DDDS_WERROR=ON
+      - run: cmake --build --preset ${{ matrix.preset }}
+      - run: ctest --preset ${{ matrix.preset }}
+
+  tidy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build clang clang-tidy
+      - run: cmake --preset tidy
+        env: { CC: clang, CXX: clang++ }
+      - run: cmake --build --preset tidy
+      - run: ctest --preset tidy
+
+  fuzz:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build clang
+      - run: cmake --preset fuzz
+        env: { CC: clang, CXX: clang++ }
+      - run: cmake --build --preset fuzz
+      - name: Fuzz every target for 60 seconds
+        run: |
+          for t in build/fuzz/fuzz/fuzz_*; do
+            [ -x "$t" ] || continue
+            name=$(basename "$t")
+            mkdir -p "corpus-work/$name"
+            "$t" -max_total_time=60 "corpus-work/$name" "fuzz/corpus/${name#fuzz_}"
+          done

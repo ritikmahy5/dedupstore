@@ -1,0 +1,59 @@
+# clang-tidy checks for src/. The `tidy` preset runs them with
+# --warnings-as-errors=*, so this list is what "clean" means. Checks are chosen for finding bugs
+# and keeping the code obvious; purely stylistic checks that fight Google style are off.
+Checks: >
+  -*,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-narrowing-conversions,
+  clang-analyzer-*,
+  -clang-analyzer-optin.performance.Padding,
+  concurrency-thread-canceltype-asynchronous,
+  cppcoreguidelines-no-malloc,
+  cppcoreguidelines-slicing,
+  cppcoreguidelines-virtual-class-destructor,
+  google-build-using-namespace,
+  google-explicit-constructor,
+  google-global-names-in-headers,
+  google-readability-casting,
+  google-runtime-int,
+  misc-definitions-in-headers,
+  misc-misplaced-const,
+  misc-redundant-expression,
+  misc-static-assert,
+  misc-unconventional-assign-operator,
+  misc-uniqueptr-reset-release,
+  misc-unused-alias-decls,
+  misc-unused-parameters,
+  misc-unused-using-decls,
+  modernize-*,
+  -modernize-avoid-c-arrays,
+  -modernize-return-braced-init-list,
+  -modernize-use-nodiscard,
+  -modernize-use-ranges,
+  -modernize-use-std-print,
+  -modernize-use-trailing-return-type,
+  -modernize-use-designated-initializers,
+  performance-*,
+  -performance-enum-size,
+  readability-avoid-const-params-in-decls,
+  readability-container-size-empty,
+  readability-delete-null-pointer,
+  readability-duplicate-include,
+  readability-inconsistent-declaration-parameter-name,
+  readability-make-member-function-const,
+  readability-misleading-indentation,
+  readability-redundant-control-flow,
+  readability-redundant-smartptr-get,
+  readability-redundant-string-cstr,
+  readability-simplify-boolean-expr,
+  readability-static-definition-in-anonymous-namespace,
+  readability-uniqueptr-delete-release
+HeaderFilterRegex: '.*/src/dds/.*'
+CheckOptions:
+  - key: misc-unused-parameters.StrictMode
+    value: false
+  # DDS_CHECK(a && b) expands to `if (!(a && b))`; rewriting that by DeMorgan inside a macro
+  # expansion is not a readability gain. The rest of the check stays on.
+  - key: readability-simplify-boolean-expr.SimplifyDeMorgan
+    value: false

@@ -1,0 +1,110 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "synth",
+  "versions": 11
+ },
+ "experiment": "E6",
+ "git_commit": "620f2a6dc1bc1b1cee68a2a3f9581647987598b0",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0020",
+  "slurm_job": "10949428"
+ },
+ "params": {
+  "mode": "concurrent",
+  "storage": "mem",
+  "threads": 4
+ },
+ "run_id": "20261009T230506Z-620f2a6-d0020-concurrent-4",
+ "samples": [
+  {
+   "counters": {
+    "duplicate_bytes": 6583667135,
+    "duplicate_copies": 707428,
+    "duplicate_share": 0.516546,
+    "physical_bytes": 12745548061,
+    "seconds": 10.5463
+   },
+   "wall_s": 10.5463
+  },
+  {
+   "counters": {
+    "duplicate_bytes": 6391900482,
+    "duplicate_copies": 686486,
+    "duplicate_share": 0.5092,
+    "physical_bytes": 12552836298,
+    "seconds": 10.3863
+   },
+   "wall_s": 10.3863
+  },
+  {
+   "counters": {
+    "duplicate_bytes": 6542680199,
+    "duplicate_copies": 702450,
+    "duplicate_share": 0.514996,
+    "physical_bytes": 12704336639,
+    "seconds": 10.6284
+   },
+   "wall_s": 10.6284
+  },
+  {
+   "counters": {
+    "duplicate_bytes": 7980721437,
+    "duplicate_copies": 857253,
+    "duplicate_share": 0.564034,
+    "physical_bytes": 14149367880,
+    "seconds": 11.6468
+   },
+   "wall_s": 11.6468
+  },
+  {
+   "counters": {
+    "duplicate_bytes": 7945822840,
+    "duplicate_copies": 853655,
+    "duplicate_share": 0.562962,
+    "physical_bytes": 14114306353,
+    "seconds": 11.6725
+   },
+   "wall_s": 11.6725
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T22:58:39Z",
+ "summary": {
+  "max": {
+   "duplicate_bytes": 7980721437,
+   "duplicate_copies": 857253,
+   "duplicate_share": 0.564034,
+   "physical_bytes": 14149367880,
+   "seconds": 11.6725,
+   "wall_s": 11.6725
+  },
+  "median": {
+   "duplicate_bytes": 6583667135,
+   "duplicate_copies": 707428,
+   "duplicate_share": 0.516546,
+   "physical_bytes": 12745548061,
+   "seconds": 10.6284,
+   "wall_s": 10.6284
+  },
+  "min": {
+   "duplicate_bytes": 6391900482,
+   "duplicate_copies": 686486,
+   "duplicate_share": 0.5092,
+   "physical_bytes": 12552836298,
+   "seconds": 10.3863,
+   "wall_s": 10.3863
+  }
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_FlatTableLookupHit",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042611Z-8dd74df-d0023-BM_FlatTableLookupHit",
+ "samples": [
+  {
+   "counters": {
+    "BM_FlatTableLookupHit/40.items_per_second": 28244188.182234842,
+    "BM_FlatTableLookupHit/40.real_time_ns": 35.52317394129621,
+    "BM_FlatTableLookupHit/60.items_per_second": 17975703.88032669,
+    "BM_FlatTableLookupHit/60.real_time_ns": 55.807309045195076,
+    "BM_FlatTableLookupHit/75.items_per_second": 15095171.035385892,
+    "BM_FlatTableLookupHit/75.real_time_ns": 66.46066813345297
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupHit/40.items_per_second": 28170961.725127533,
+    "BM_FlatTableLookupHit/40.real_time_ns": 35.58748116660877,
+    "BM_FlatTableLookupHit/60.items_per_second": 18131898.179994695,
+    "BM_FlatTableLookupHit/60.real_time_ns": 55.30150053873591,
+    "BM_FlatTableLookupHit/75.items_per_second": 15099464.242017249,
+    "BM_FlatTableLookupHit/75.real_time_ns": 66.40934656481515
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupHit/40.items_per_second": 28179106.826832265,
+    "BM_FlatTableLookupHit/40.real_time_ns": 35.61323640423406,
+    "BM_FlatTableLookupHit/60.items_per_second": 18115792.834457114,
+    "BM_FlatTableLookupHit/60.real_time_ns": 55.34392444207834,
+    "BM_FlatTableLookupHit/75.items_per_second": 15088168.38743488,
+    "BM_FlatTableLookupHit/75.real_time_ns": 66.4558430392138
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupHit/40.items_per_second": 27944741.192825183,
+    "BM_FlatTableLookupHit/40.real_time_ns": 35.890421667507155,
+    "BM_FlatTableLookupHit/60.items_per_second": 18063230.035227243,
+    "BM_FlatTableLookupHit/60.real_time_ns": 55.55646240814002,
+    "BM_FlatTableLookupHit/75.items_per_second": 15087193.202936247,
+    "BM_FlatTableLookupHit/75.real_time_ns": 66.46513796874883
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_FlatTableLookupHit/40.items_per_second": 28246866.481544122,
+    "BM_FlatTableLookupHit/40.real_time_ns": 35.49093526691631,
+    "BM_FlatTableLookupHit/60.items_per_second": 18112520.975808788,
+    "BM_FlatTableLookupHit/60.real_time_ns": 55.3762135671849,
+    "BM_FlatTableLookupHit/75.items_per_second": 15107528.507635435,
+    "BM_FlatTableLookupHit/75.real_time_ns": 66.37486177560696
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_FlatTableLookupHit/40.items_per_second": 28246866.481544122,
+   "BM_FlatTableLookupHit/40.real_time_ns": 35.890421667507155,
+   "BM_FlatTableLookupHit/60.items_per_second": 18131898.179994695,
+   "BM_FlatTableLookupHit/60.real_time_ns": 55.807309045195076,
+   "BM_FlatTableLookupHit/75.items_per_second": 15107528.507635435,
+   "BM_FlatTableLookupHit/75.real_time_ns": 66.46513796874883,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_FlatTableLookupHit/40.items_per_second": 28179106.826832265,
+   "BM_FlatTableLookupHit/40.real_time_ns": 35.58748116660877,
+   "BM_FlatTableLookupHit/60.items_per_second": 18112520.975808788,
+   "BM_FlatTableLookupHit/60.real_time_ns": 55.3762135671849,
+   "BM_FlatTableLookupHit/75.items_per_second": 15095171.035385892,
+   "BM_FlatTableLookupHit/75.real_time_ns": 66.4558430392138,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_FlatTableLookupHit/40.items_per_second": 27944741.192825183,
+   "BM_FlatTableLookupHit/40.real_time_ns": 35.49093526691631,
+   "BM_FlatTableLookupHit/60.items_per_second": 17975703.88032669,
+   "BM_FlatTableLookupHit/60.real_time_ns": 55.30150053873591,
+   "BM_FlatTableLookupHit/75.items_per_second": 15087193.202936247,
+   "BM_FlatTableLookupHit/75.real_time_ns": 66.37486177560696,
+   "wall_s": 0
+  }
+ }
+}

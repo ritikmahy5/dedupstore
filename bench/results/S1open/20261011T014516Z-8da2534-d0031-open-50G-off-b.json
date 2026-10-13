@@ -1,0 +1,141 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "synthetic-random-50GiB"
+ },
+ "experiment": "S1open",
+ "git_commit": "8da253445b959bf01e31f1c20557949ad43cc71a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0031",
+  "slurm_job": "10977387"
+ },
+ "params": {
+  "checkpoint": "off",
+  "crc32c": "sse4.2",
+  "storage": "disk"
+ },
+ "run_id": "20261011T014516Z-8da2534-d0031-open-50G-off-b",
+ "samples": [
+  {
+   "counters": {
+    "blobs": 5745660,
+    "checkpoint_bytes": 281849064,
+    "checkpoint_containers": 0,
+    "containers": 12901,
+    "footers_read": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.422092,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.422092
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "checkpoint_bytes": 281849064,
+    "checkpoint_containers": 0,
+    "containers": 12901,
+    "footers_read": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.471352,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.471352
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "checkpoint_bytes": 281849064,
+    "checkpoint_containers": 0,
+    "containers": 12901,
+    "footers_read": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.461579,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.461579
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "checkpoint_bytes": 281849064,
+    "checkpoint_containers": 0,
+    "containers": 12901,
+    "footers_read": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.478916,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.478916
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "checkpoint_bytes": 281849064,
+    "checkpoint_containers": 0,
+    "containers": 12901,
+    "footers_read": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.481076,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.481076
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-11T01:41:24Z",
+ "summary": {
+  "max": {
+   "blobs": 5745660,
+   "checkpoint_bytes": 281849064,
+   "checkpoint_containers": 0,
+   "containers": 12901,
+   "footers_read": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.481076,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.481076
+  },
+  "median": {
+   "blobs": 5745660,
+   "checkpoint_bytes": 281849064,
+   "checkpoint_containers": 0,
+   "containers": 12901,
+   "footers_read": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.471352,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.471352
+  },
+  "min": {
+   "blobs": 5745660,
+   "checkpoint_bytes": 281849064,
+   "checkpoint_containers": 0,
+   "containers": 12901,
+   "footers_read": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.422092,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.422092
+  }
+ }
+}

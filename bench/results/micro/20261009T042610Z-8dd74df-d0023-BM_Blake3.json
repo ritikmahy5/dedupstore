@@ -1,0 +1,164 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_Blake3",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042610Z-8dd74df-d0023-BM_Blake3",
+ "samples": [
+  {
+   "counters": {
+    "BM_Blake3/1024.bytes_per_second": 1389841706.150925,
+    "BM_Blake3/1024.real_time_ns": 737.7921692842167,
+    "BM_Blake3/1048576.bytes_per_second": 7790019164.913121,
+    "BM_Blake3/1048576.real_time_ns": 134937.13844009567,
+    "BM_Blake3/16384.bytes_per_second": 7406887674.138758,
+    "BM_Blake3/16384.real_time_ns": 2215.2289215257356,
+    "BM_Blake3/262144.bytes_per_second": 7951853629.874994,
+    "BM_Blake3/262144.real_time_ns": 33054.77194643692,
+    "BM_Blake3/4096.bytes_per_second": 4407477211.491924,
+    "BM_Blake3/4096.real_time_ns": 930.6094197592424,
+    "BM_Blake3/65536.bytes_per_second": 7832715771.402285,
+    "BM_Blake3/65536.real_time_ns": 8389.758696026824
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Blake3/1024.bytes_per_second": 1389582058.8155825,
+    "BM_Blake3/1024.real_time_ns": 738.6402638847607,
+    "BM_Blake3/1048576.bytes_per_second": 7791725155.153412,
+    "BM_Blake3/1048576.real_time_ns": 134875.62812955028,
+    "BM_Blake3/16384.bytes_per_second": 7407314939.128877,
+    "BM_Blake3/16384.real_time_ns": 2217.206752017808,
+    "BM_Blake3/262144.bytes_per_second": 7961061114.879974,
+    "BM_Blake3/262144.real_time_ns": 32979.437704192365,
+    "BM_Blake3/4096.bytes_per_second": 4408089774.352816,
+    "BM_Blake3/4096.real_time_ns": 930.5092617580237,
+    "BM_Blake3/65536.bytes_per_second": 7838244120.039983,
+    "BM_Blake3/65536.real_time_ns": 8383.897671298948
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Blake3/1024.bytes_per_second": 1388555806.8853776,
+    "BM_Blake3/1024.real_time_ns": 738.5415756089445,
+    "BM_Blake3/1048576.bytes_per_second": 7628010440.454705,
+    "BM_Blake3/1048576.real_time_ns": 137812.90385321318,
+    "BM_Blake3/16384.bytes_per_second": 7313960414.856731,
+    "BM_Blake3/16384.real_time_ns": 2246.0536997261165,
+    "BM_Blake3/262144.bytes_per_second": 7793080312.022484,
+    "BM_Blake3/262144.real_time_ns": 33702.332124803215,
+    "BM_Blake3/4096.bytes_per_second": 4414442489.41791,
+    "BM_Blake3/4096.real_time_ns": 929.1721384764724,
+    "BM_Blake3/65536.bytes_per_second": 7683658185.318917,
+    "BM_Blake3/65536.real_time_ns": 8542.030376232347
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Blake3/1024.bytes_per_second": 1390029248.2917013,
+    "BM_Blake3/1024.real_time_ns": 737.6888822968733,
+    "BM_Blake3/1048576.bytes_per_second": 7779969717.164571,
+    "BM_Blake3/1048576.real_time_ns": 135147.9107864635,
+    "BM_Blake3/16384.bytes_per_second": 7406630636.150628,
+    "BM_Blake3/16384.real_time_ns": 2216.645287766649,
+    "BM_Blake3/262144.bytes_per_second": 7948572455.860703,
+    "BM_Blake3/262144.real_time_ns": 33067.082480567864,
+    "BM_Blake3/4096.bytes_per_second": 4427270291.095447,
+    "BM_Blake3/4096.real_time_ns": 926.4712055318099,
+    "BM_Blake3/65536.bytes_per_second": 7835546947.983793,
+    "BM_Blake3/65536.real_time_ns": 8381.198808035915
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Blake3/1024.bytes_per_second": 1389910739.837588,
+    "BM_Blake3/1024.real_time_ns": 737.8044488615714,
+    "BM_Blake3/1048576.bytes_per_second": 7777742428.778113,
+    "BM_Blake3/1048576.real_time_ns": 135216.25725718972,
+    "BM_Blake3/16384.bytes_per_second": 7409852048.224041,
+    "BM_Blake3/16384.real_time_ns": 2214.243605706686,
+    "BM_Blake3/262144.bytes_per_second": 7949202091.579115,
+    "BM_Blake3/262144.real_time_ns": 33025.44207723449,
+    "BM_Blake3/4096.bytes_per_second": 4426008238.134211,
+    "BM_Blake3/4096.real_time_ns": 926.7606330295165,
+    "BM_Blake3/65536.bytes_per_second": 7839993834.707348,
+    "BM_Blake3/65536.real_time_ns": 8370.967784904477
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_Blake3/1024.bytes_per_second": 1390029248.2917013,
+   "BM_Blake3/1024.real_time_ns": 738.6402638847607,
+   "BM_Blake3/1048576.bytes_per_second": 7791725155.153412,
+   "BM_Blake3/1048576.real_time_ns": 137812.90385321318,
+   "BM_Blake3/16384.bytes_per_second": 7409852048.224041,
+   "BM_Blake3/16384.real_time_ns": 2246.0536997261165,
+   "BM_Blake3/262144.bytes_per_second": 7961061114.879974,
+   "BM_Blake3/262144.real_time_ns": 33702.332124803215,
+   "BM_Blake3/4096.bytes_per_second": 4427270291.095447,
+   "BM_Blake3/4096.real_time_ns": 930.6094197592424,
+   "BM_Blake3/65536.bytes_per_second": 7839993834.707348,
+   "BM_Blake3/65536.real_time_ns": 8542.030376232347,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_Blake3/1024.bytes_per_second": 1389841706.150925,
+   "BM_Blake3/1024.real_time_ns": 737.8044488615714,
+   "BM_Blake3/1048576.bytes_per_second": 7779969717.164571,
+   "BM_Blake3/1048576.real_time_ns": 135147.9107864635,
+   "BM_Blake3/16384.bytes_per_second": 7406887674.138758,
+   "BM_Blake3/16384.real_time_ns": 2216.645287766649,
+   "BM_Blake3/262144.bytes_per_second": 7949202091.579115,
+   "BM_Blake3/262144.real_time_ns": 33054.77194643692,
+   "BM_Blake3/4096.bytes_per_second": 4414442489.41791,
+   "BM_Blake3/4096.real_time_ns": 929.1721384764724,
+   "BM_Blake3/65536.bytes_per_second": 7835546947.983793,
+   "BM_Blake3/65536.real_time_ns": 8383.897671298948,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_Blake3/1024.bytes_per_second": 1388555806.8853776,
+   "BM_Blake3/1024.real_time_ns": 737.6888822968733,
+   "BM_Blake3/1048576.bytes_per_second": 7628010440.454705,
+   "BM_Blake3/1048576.real_time_ns": 134875.62812955028,
+   "BM_Blake3/16384.bytes_per_second": 7313960414.856731,
+   "BM_Blake3/16384.real_time_ns": 2214.243605706686,
+   "BM_Blake3/262144.bytes_per_second": 7793080312.022484,
+   "BM_Blake3/262144.real_time_ns": 32979.437704192365,
+   "BM_Blake3/4096.bytes_per_second": 4407477211.491924,
+   "BM_Blake3/4096.real_time_ns": 926.4712055318099,
+   "BM_Blake3/65536.bytes_per_second": 7683658185.318917,
+   "BM_Blake3/65536.real_time_ns": 8370.967784904477,
+   "wall_s": 0
+  }
+ }
+}

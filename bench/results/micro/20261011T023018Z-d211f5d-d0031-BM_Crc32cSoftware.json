@@ -1,0 +1,164 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "d211f5de250b6c75c53f836ab22d1766064702de",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0031",
+  "slurm_job": "10978928"
+ },
+ "params": {
+  "family": "BM_Crc32cSoftware",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261011T023018Z-d211f5d-d0031-BM_Crc32cSoftware",
+ "samples": [
+  {
+   "counters": {
+    "BM_Crc32cSoftware/1024.bytes_per_second": 2664995919.558545,
+    "BM_Crc32cSoftware/1024.real_time_ns": 384.7491495203483,
+    "BM_Crc32cSoftware/1048576.bytes_per_second": 2651316331.1607904,
+    "BM_Crc32cSoftware/1048576.real_time_ns": 396224.4506761457,
+    "BM_Crc32cSoftware/16384.bytes_per_second": 2655949778.2908587,
+    "BM_Crc32cSoftware/16384.real_time_ns": 6176.737589343703,
+    "BM_Crc32cSoftware/262144.bytes_per_second": 2649069597.992359,
+    "BM_Crc32cSoftware/262144.real_time_ns": 99089.60009172815,
+    "BM_Crc32cSoftware/4096.bytes_per_second": 2659278836.3982067,
+    "BM_Crc32cSoftware/4096.real_time_ns": 1542.1458535224986,
+    "BM_Crc32cSoftware/65536.bytes_per_second": 2651228841.446776,
+    "BM_Crc32cSoftware/65536.real_time_ns": 24752.660765053504
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32cSoftware/1024.bytes_per_second": 2667077929.312385,
+    "BM_Crc32cSoftware/1024.real_time_ns": 384.42578568702726,
+    "BM_Crc32cSoftware/1048576.bytes_per_second": 2651751637.533166,
+    "BM_Crc32cSoftware/1048576.real_time_ns": 396159.75868837244,
+    "BM_Crc32cSoftware/16384.bytes_per_second": 2651300708.0777483,
+    "BM_Crc32cSoftware/16384.real_time_ns": 6187.812543179769,
+    "BM_Crc32cSoftware/262144.bytes_per_second": 2654181362.4521313,
+    "BM_Crc32cSoftware/262144.real_time_ns": 98893.13773246031,
+    "BM_Crc32cSoftware/4096.bytes_per_second": 2656929915.7095904,
+    "BM_Crc32cSoftware/4096.real_time_ns": 1543.5553765974628,
+    "BM_Crc32cSoftware/65536.bytes_per_second": 2656025893.8401957,
+    "BM_Crc32cSoftware/65536.real_time_ns": 24706.287490260213
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32cSoftware/1024.bytes_per_second": 2664501185.302314,
+    "BM_Crc32cSoftware/1024.real_time_ns": 384.79756132351974,
+    "BM_Crc32cSoftware/1048576.bytes_per_second": 2653642698.7558327,
+    "BM_Crc32cSoftware/1048576.real_time_ns": 395840.00788742513,
+    "BM_Crc32cSoftware/16384.bytes_per_second": 2651176875.6817985,
+    "BM_Crc32cSoftware/16384.real_time_ns": 6188.098877679664,
+    "BM_Crc32cSoftware/262144.bytes_per_second": 2655813921.8039136,
+    "BM_Crc32cSoftware/262144.real_time_ns": 98831.37426777837,
+    "BM_Crc32cSoftware/4096.bytes_per_second": 2656225975.7125607,
+    "BM_Crc32cSoftware/4096.real_time_ns": 1544.0128730063614,
+    "BM_Crc32cSoftware/65536.bytes_per_second": 2655496996.243746,
+    "BM_Crc32cSoftware/65536.real_time_ns": 24711.541051931184
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32cSoftware/1024.bytes_per_second": 2667443772.0964665,
+    "BM_Crc32cSoftware/1024.real_time_ns": 384.3736497220757,
+    "BM_Crc32cSoftware/1048576.bytes_per_second": 2649327809.9942966,
+    "BM_Crc32cSoftware/1048576.real_time_ns": 396490.88037065277,
+    "BM_Crc32cSoftware/16384.bytes_per_second": 2655106532.0099754,
+    "BM_Crc32cSoftware/16384.real_time_ns": 6178.842183691037,
+    "BM_Crc32cSoftware/262144.bytes_per_second": 2647599537.4381437,
+    "BM_Crc32cSoftware/262144.real_time_ns": 99147.12393160122,
+    "BM_Crc32cSoftware/4096.bytes_per_second": 2655920351.6537504,
+    "BM_Crc32cSoftware/4096.real_time_ns": 1544.1887492190747,
+    "BM_Crc32cSoftware/65536.bytes_per_second": 2653329857.9668775,
+    "BM_Crc32cSoftware/65536.real_time_ns": 24732.242629529053
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32cSoftware/1024.bytes_per_second": 2662496410.41356,
+    "BM_Crc32cSoftware/1024.real_time_ns": 385.12032090373367,
+    "BM_Crc32cSoftware/1048576.bytes_per_second": 2653490089.5011,
+    "BM_Crc32cSoftware/1048576.real_time_ns": 395860.69540882844,
+    "BM_Crc32cSoftware/16384.bytes_per_second": 2642462068.9019904,
+    "BM_Crc32cSoftware/16384.real_time_ns": 6208.54416507917,
+    "BM_Crc32cSoftware/262144.bytes_per_second": 2651254228.330258,
+    "BM_Crc32cSoftware/262144.real_time_ns": 99011.03776810554,
+    "BM_Crc32cSoftware/4096.bytes_per_second": 2650548815.494509,
+    "BM_Crc32cSoftware/4096.real_time_ns": 1547.4460840345894,
+    "BM_Crc32cSoftware/65536.bytes_per_second": 2655932780.3776164,
+    "BM_Crc32cSoftware/65536.real_time_ns": 24706.277512507953
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-11T02:15:30Z",
+ "summary": {
+  "max": {
+   "BM_Crc32cSoftware/1024.bytes_per_second": 2667443772.0964665,
+   "BM_Crc32cSoftware/1024.real_time_ns": 385.12032090373367,
+   "BM_Crc32cSoftware/1048576.bytes_per_second": 2653642698.7558327,
+   "BM_Crc32cSoftware/1048576.real_time_ns": 396490.88037065277,
+   "BM_Crc32cSoftware/16384.bytes_per_second": 2655949778.2908587,
+   "BM_Crc32cSoftware/16384.real_time_ns": 6208.54416507917,
+   "BM_Crc32cSoftware/262144.bytes_per_second": 2655813921.8039136,
+   "BM_Crc32cSoftware/262144.real_time_ns": 99147.12393160122,
+   "BM_Crc32cSoftware/4096.bytes_per_second": 2659278836.3982067,
+   "BM_Crc32cSoftware/4096.real_time_ns": 1547.4460840345894,
+   "BM_Crc32cSoftware/65536.bytes_per_second": 2656025893.8401957,
+   "BM_Crc32cSoftware/65536.real_time_ns": 24752.660765053504,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_Crc32cSoftware/1024.bytes_per_second": 2664995919.558545,
+   "BM_Crc32cSoftware/1024.real_time_ns": 384.7491495203483,
+   "BM_Crc32cSoftware/1048576.bytes_per_second": 2651751637.533166,
+   "BM_Crc32cSoftware/1048576.real_time_ns": 396159.75868837244,
+   "BM_Crc32cSoftware/16384.bytes_per_second": 2651300708.0777483,
+   "BM_Crc32cSoftware/16384.real_time_ns": 6187.812543179769,
+   "BM_Crc32cSoftware/262144.bytes_per_second": 2651254228.330258,
+   "BM_Crc32cSoftware/262144.real_time_ns": 99011.03776810554,
+   "BM_Crc32cSoftware/4096.bytes_per_second": 2656225975.7125607,
+   "BM_Crc32cSoftware/4096.real_time_ns": 1544.0128730063614,
+   "BM_Crc32cSoftware/65536.bytes_per_second": 2655496996.243746,
+   "BM_Crc32cSoftware/65536.real_time_ns": 24711.541051931184,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_Crc32cSoftware/1024.bytes_per_second": 2662496410.41356,
+   "BM_Crc32cSoftware/1024.real_time_ns": 384.3736497220757,
+   "BM_Crc32cSoftware/1048576.bytes_per_second": 2649327809.9942966,
+   "BM_Crc32cSoftware/1048576.real_time_ns": 395840.00788742513,
+   "BM_Crc32cSoftware/16384.bytes_per_second": 2642462068.9019904,
+   "BM_Crc32cSoftware/16384.real_time_ns": 6176.737589343703,
+   "BM_Crc32cSoftware/262144.bytes_per_second": 2647599537.4381437,
+   "BM_Crc32cSoftware/262144.real_time_ns": 98831.37426777837,
+   "BM_Crc32cSoftware/4096.bytes_per_second": 2650548815.494509,
+   "BM_Crc32cSoftware/4096.real_time_ns": 1542.1458535224986,
+   "BM_Crc32cSoftware/65536.bytes_per_second": 2651228841.446776,
+   "BM_Crc32cSoftware/65536.real_time_ns": 24706.277512507953,
+   "wall_s": 0
+  }
+ }
+}

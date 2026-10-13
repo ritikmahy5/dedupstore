@@ -1,0 +1,30 @@
+# build trees (build is a symlink to build.nosync/, which iCloud Drive does not sync)
+/build
+/build/
+/out/
+compile_commands.json
+.cache/
+
+# benchmark data and scratch (datasets live on /scratch, never in git)
+/bench/data/
+/bench/scratch/
+*.tmp
+
+# fuzzing artifacts (corpora under fuzz/corpus/ ARE committed)
+crash-*
+leak-*
+timeout-*
+oom-*
+
+# editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# local tool venv (scripts/dev/setup_tools.sh)
+/.tools/
+/build.nosync/
+
+# Python bytecode
+__pycache__/
+*.pyc

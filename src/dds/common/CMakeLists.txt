@@ -1,0 +1,13 @@
+dds_add_library(dds_common
+  SOURCES
+    check.cc
+    clock.cc
+    crc32c.cc
+    encoding.cc
+    log.cc
+    ordered_mutex.cc
+    process_identity.cc
+    status.cc
+    strings.cc
+    test_hooks.cc
+    unique_fd.cc)

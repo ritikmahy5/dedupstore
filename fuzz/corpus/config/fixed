@@ -1,0 +1,12 @@
+dedupstore-config=1
+repo_id=00112233445566778899aabbccddeeff
+created_at_ns=-1
+hash=blake3-256
+chunker=fixed
+min_size=4096
+avg_size=4096
+max_size=4096
+normalization=0
+gear_seed=6465647570737472
+container_target=1048576
+crc32c=b20bbef8

@@ -1,0 +1,5 @@
+# Google style, 100 columns.
+BasedOnStyle: Google
+ColumnLimit: 100
+DerivePointerAlignment: false
+PointerAlignment: Left

@@ -1,0 +1,92 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "synthetic-random-100GiB"
+ },
+ "experiment": "S1open",
+ "git_commit": "8da253445b959bf01e31f1c20557949ad43cc71a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0031",
+  "slurm_job": "10977387"
+ },
+ "params": {
+  "crc32c": "sse4.2",
+  "storage": "disk"
+ },
+ "run_id": "20261011T015231Z-8da2534-d0031-write-100G",
+ "samples": [
+  {
+   "counters": {
+    "blobs": 11490647,
+    "checkpoint_bytes": 563663027,
+    "write_s": 5.37167
+   },
+   "wall_s": 5.37167
+  },
+  {
+   "counters": {
+    "blobs": 11490647,
+    "checkpoint_bytes": 563663027,
+    "write_s": 5.30604
+   },
+   "wall_s": 5.30604
+  },
+  {
+   "counters": {
+    "blobs": 11490647,
+    "checkpoint_bytes": 563663027,
+    "write_s": 5.27828
+   },
+   "wall_s": 5.27828
+  },
+  {
+   "counters": {
+    "blobs": 11490647,
+    "checkpoint_bytes": 563663027,
+    "write_s": 5.2281
+   },
+   "wall_s": 5.2281
+  },
+  {
+   "counters": {
+    "blobs": 11490647,
+    "checkpoint_bytes": 563663027,
+    "write_s": 5.23024
+   },
+   "wall_s": 5.23024
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-11T01:41:24Z",
+ "summary": {
+  "max": {
+   "blobs": 11490647,
+   "checkpoint_bytes": 563663027,
+   "wall_s": 5.37167,
+   "write_s": 5.37167
+  },
+  "median": {
+   "blobs": 11490647,
+   "checkpoint_bytes": 563663027,
+   "wall_s": 5.27828,
+   "write_s": 5.27828
+  },
+  "min": {
+   "blobs": 11490647,
+   "checkpoint_bytes": 563663027,
+   "wall_s": 5.2281,
+   "write_s": 5.2281
+  }
+ }
+}

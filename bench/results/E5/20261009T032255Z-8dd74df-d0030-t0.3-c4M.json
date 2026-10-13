@@ -1,0 +1,156 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "kernel-alternate-rm"
+ },
+ "experiment": "E5",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0030",
+  "slurm_job": "10930720"
+ },
+ "params": {
+  "storage": "disk",
+  "threshold": 0.3
+ },
+ "run_id": "20261009T032255Z-8dd74df-d0030-t0.3-c4M",
+ "samples": [
+  {
+   "counters": {
+    "bytes_copied": 0,
+    "bytes_reclaimed": 33630467,
+    "compact_s": 0.0162062,
+    "containers_compacted": 0,
+    "containers_deleted": 10,
+    "mark_s": 0.524055,
+    "physical_after": 2918461095,
+    "physical_before": 2952091562,
+    "plan_s": 0.0126026,
+    "seconds": 0.553034,
+    "write_amplification": 0
+   },
+   "wall_s": 0.553034
+  },
+  {
+   "counters": {
+    "bytes_copied": 0,
+    "bytes_reclaimed": 33630467,
+    "compact_s": 0.0158251,
+    "containers_compacted": 0,
+    "containers_deleted": 10,
+    "mark_s": 0.518918,
+    "physical_after": 2918461095,
+    "physical_before": 2952091562,
+    "plan_s": 0.0123807,
+    "seconds": 0.547271,
+    "write_amplification": 0
+   },
+   "wall_s": 0.547271
+  },
+  {
+   "counters": {
+    "bytes_copied": 0,
+    "bytes_reclaimed": 33630467,
+    "compact_s": 0.01613,
+    "containers_compacted": 0,
+    "containers_deleted": 10,
+    "mark_s": 0.523467,
+    "physical_after": 2918461095,
+    "physical_before": 2952091562,
+    "plan_s": 0.0124506,
+    "seconds": 0.552195,
+    "write_amplification": 0
+   },
+   "wall_s": 0.552195
+  },
+  {
+   "counters": {
+    "bytes_copied": 0,
+    "bytes_reclaimed": 33630467,
+    "compact_s": 0.0161708,
+    "containers_compacted": 0,
+    "containers_deleted": 10,
+    "mark_s": 0.524343,
+    "physical_after": 2918461095,
+    "physical_before": 2952091562,
+    "plan_s": 0.0127228,
+    "seconds": 0.553386,
+    "write_amplification": 0
+   },
+   "wall_s": 0.553386
+  },
+  {
+   "counters": {
+    "bytes_copied": 0,
+    "bytes_reclaimed": 33630467,
+    "compact_s": 0.0161335,
+    "containers_compacted": 0,
+    "containers_deleted": 10,
+    "mark_s": 0.521732,
+    "physical_after": 2918461095,
+    "physical_before": 2952091562,
+    "plan_s": 0.0127544,
+    "seconds": 0.550767,
+    "write_amplification": 0
+   },
+   "wall_s": 0.550767
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T03:20:17Z",
+ "summary": {
+  "max": {
+   "bytes_copied": 0,
+   "bytes_reclaimed": 33630467,
+   "compact_s": 0.0162062,
+   "containers_compacted": 0,
+   "containers_deleted": 10,
+   "mark_s": 0.524343,
+   "physical_after": 2918461095,
+   "physical_before": 2952091562,
+   "plan_s": 0.0127544,
+   "seconds": 0.553386,
+   "wall_s": 0.553386,
+   "write_amplification": 0
+  },
+  "median": {
+   "bytes_copied": 0,
+   "bytes_reclaimed": 33630467,
+   "compact_s": 0.0161335,
+   "containers_compacted": 0,
+   "containers_deleted": 10,
+   "mark_s": 0.523467,
+   "physical_after": 2918461095,
+   "physical_before": 2952091562,
+   "plan_s": 0.0126026,
+   "seconds": 0.552195,
+   "wall_s": 0.552195,
+   "write_amplification": 0
+  },
+  "min": {
+   "bytes_copied": 0,
+   "bytes_reclaimed": 33630467,
+   "compact_s": 0.0158251,
+   "containers_compacted": 0,
+   "containers_deleted": 10,
+   "mark_s": 0.518918,
+   "physical_after": 2918461095,
+   "physical_before": 2952091562,
+   "plan_s": 0.0123807,
+   "seconds": 0.547271,
+   "wall_s": 0.547271,
+   "write_amplification": 0
+  }
+ }
+}

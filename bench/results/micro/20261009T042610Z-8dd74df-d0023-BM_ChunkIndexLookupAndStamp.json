@@ -1,0 +1,164 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_ChunkIndexLookupAndStamp",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042610Z-8dd74df-d0023-BM_ChunkIndexLookupAndStamp",
+ "samples": [
+  {
+   "counters": {
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9169397.228430152,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.05842282625214,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 84584803.92559825,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 189.1592727941272,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15272096.01261224,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 130.95779376637816,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 69417081.09536965,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 460.98164162270587,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 27840851.63455422,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 143.67376589283157,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 53451607.04366023,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 149.66809124121295
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9184232.572857749,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 108.88226011994837,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 81435091.76983465,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 196.47549541936846,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15135627.23789814,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 132.13856079860335,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 77521043.23909117,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 412.79114241671493,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28117701.502253152,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 142.2591387734687,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 54463915.336302914,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 146.8862447843077
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9168690.521545952,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.06682886177163,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 82855215.670073,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 193.10793980322885,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15288799.68067017,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 130.81471677129932,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 75597211.99213265,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 423.29603376550733,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28175165.63313068,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 141.9689968138633,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 53958881.91113044,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 148.26104093809604
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9172648.450022737,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.01976734947488,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 77705411.56268312,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 205.90586521883586,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15141434.242494754,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 132.0878833516945,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 85481464.10067655,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 374.3501627710976,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28232765.56403324,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 141.67935446946603,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 54151724.74227069,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 147.73305999162795
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9170951.367134087,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.03994143766776,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 85167315.38956463,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 187.86549660294264,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15315471.94223833,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 130.58689980582494,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 84138344.48432817,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 380.3259999483399,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28439047.189270757,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 140.65168827136677,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 54051669.53777492,
+    "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 148.00652909359377
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9184232.572857749,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.06682886177163,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 85167315.38956463,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 205.90586521883586,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15315471.94223833,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 132.13856079860335,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 85481464.10067655,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 460.98164162270587,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28439047.189270757,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 143.67376589283157,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 54463915.336302914,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 149.66809124121295,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9170951.367134087,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 109.03994143766776,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 82855215.670073,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 193.10793980322885,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15272096.01261224,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 130.95779376637816,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 77521043.23909117,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 412.79114241671493,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 28175165.63313068,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 141.9689968138633,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 54051669.53777492,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 148.00652909359377,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.items_per_second": 9168690.521545952,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:1.real_time_ns": 108.88226011994837,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.items_per_second": 77705411.56268312,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:16.real_time_ns": 187.86549660294264,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.items_per_second": 15135627.23789814,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:2.real_time_ns": 130.58689980582494,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.items_per_second": 69417081.09536965,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:32.real_time_ns": 374.3501627710976,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.items_per_second": 27840851.63455422,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:4.real_time_ns": 140.65168827136677,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.items_per_second": 53451607.04366023,
+   "BM_ChunkIndexLookupAndStamp/real_time/threads:8.real_time_ns": 146.8862447843077,
+   "wall_s": 0
+  }
+ }
+}

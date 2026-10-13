@@ -1,0 +1,5 @@
+host=laptop.local
+pid=4242
+pid_start=1791331200123456
+acquired_at_ns=1791331200999999999
+command=dds backup /r /home

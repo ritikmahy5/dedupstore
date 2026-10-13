@@ -1,0 +1,115 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "synthetic-random-50GiB"
+ },
+ "experiment": "E9",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930747"
+ },
+ "params": {
+  "storage": "disk"
+ },
+ "run_id": "20261009T041225Z-8dd74df-d0023-open-50G",
+ "samples": [
+  {
+   "counters": {
+    "blobs": 5745660,
+    "containers": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.465787,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.465787
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "containers": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.445432,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.445432
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "containers": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.507099,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.507099
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "containers": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.440208,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.440208
+  },
+  {
+   "counters": {
+    "blobs": 5745660,
+    "containers": 12901,
+    "index_bytes": 536870912,
+    "index_bytes_per_blob": 93.4394,
+    "open_s": 0.49154,
+    "unique_data_bytes": 53687091200
+   },
+   "wall_s": 0.49154
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:08:34Z",
+ "summary": {
+  "max": {
+   "blobs": 5745660,
+   "containers": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.507099,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.507099
+  },
+  "median": {
+   "blobs": 5745660,
+   "containers": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.465787,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.465787
+  },
+  "min": {
+   "blobs": 5745660,
+   "containers": 12901,
+   "index_bytes": 536870912,
+   "index_bytes_per_blob": 93.4394,
+   "open_s": 0.440208,
+   "unique_data_bytes": 53687091200,
+   "wall_s": 0.440208
+  }
+ }
+}

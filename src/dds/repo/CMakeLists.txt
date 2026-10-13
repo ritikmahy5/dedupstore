@@ -1,0 +1,22 @@
+dds_add_library(dds_repo
+  SOURCES
+    backup.cc
+    backup_parent.cc
+    backup_queue.cc
+    blob_reader.cc
+    dag_walker.cc
+    epoch_manager.cc
+    file_store.cc
+    index_checkpoint.cc
+    index_checkpoint_format.cc
+    ingest_session.cc
+    repo_config.cc
+    repo_lock.cc
+    repo_open.cc
+    repository.cc
+    repository_ops.cc
+    restorer.cc
+    snapshot_store.cc
+    stats.cc
+    verifier.cc
+  DEPS dds_snapshot)

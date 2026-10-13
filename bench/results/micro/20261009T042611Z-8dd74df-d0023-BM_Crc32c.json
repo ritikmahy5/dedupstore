@@ -1,0 +1,164 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "in-memory buffers"
+ },
+ "experiment": "micro",
+ "git_commit": "8dd74dfcca468454599d6293a3bd2b4c1b60d60a",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0023",
+  "slurm_job": "10930767"
+ },
+ "params": {
+  "family": "BM_Crc32c",
+  "library": "google-benchmark"
+ },
+ "run_id": "20261009T042611Z-8dd74df-d0023-BM_Crc32c",
+ "samples": [
+  {
+   "counters": {
+    "BM_Crc32c/1024.bytes_per_second": 2195358662.2035313,
+    "BM_Crc32c/1024.real_time_ns": 467.06346452435463,
+    "BM_Crc32c/1048576.bytes_per_second": 2224239080.765756,
+    "BM_Crc32c/1048576.real_time_ns": 472570.75110744487,
+    "BM_Crc32c/16384.bytes_per_second": 2224736119.0515933,
+    "BM_Crc32c/16384.real_time_ns": 7374.425894181506,
+    "BM_Crc32c/262144.bytes_per_second": 2228201420.3037977,
+    "BM_Crc32c/262144.real_time_ns": 117809.68104537504,
+    "BM_Crc32c/4096.bytes_per_second": 2220986014.9300437,
+    "BM_Crc32c/4096.real_time_ns": 1847.3273159765538,
+    "BM_Crc32c/65536.bytes_per_second": 2224189481.950527,
+    "BM_Crc32c/65536.real_time_ns": 29506.61036029257
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32c/1024.bytes_per_second": 2195587901.569419,
+    "BM_Crc32c/1024.real_time_ns": 467.02937535656855,
+    "BM_Crc32c/1048576.bytes_per_second": 2226628618.153647,
+    "BM_Crc32c/1048576.real_time_ns": 471844.50409843936,
+    "BM_Crc32c/16384.bytes_per_second": 2224101466.7942677,
+    "BM_Crc32c/16384.real_time_ns": 7377.225088680681,
+    "BM_Crc32c/262144.bytes_per_second": 2225117005.582496,
+    "BM_Crc32c/262144.real_time_ns": 117973.59558475466,
+    "BM_Crc32c/4096.bytes_per_second": 2223945874.450181,
+    "BM_Crc32c/4096.real_time_ns": 1844.2575218265833,
+    "BM_Crc32c/65536.bytes_per_second": 2225612782.787293,
+    "BM_Crc32c/65536.real_time_ns": 29487.982880439617
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32c/1024.bytes_per_second": 2192746928.5614805,
+    "BM_Crc32c/1024.real_time_ns": 467.9571913694067,
+    "BM_Crc32c/1048576.bytes_per_second": 2225624463.1182065,
+    "BM_Crc32c/1048576.real_time_ns": 472214.8650696604,
+    "BM_Crc32c/16384.bytes_per_second": 2227000732.1714573,
+    "BM_Crc32c/16384.real_time_ns": 7367.156109484642,
+    "BM_Crc32c/262144.bytes_per_second": 2230193467.986086,
+    "BM_Crc32c/262144.real_time_ns": 117812.60367440197,
+    "BM_Crc32c/4096.bytes_per_second": 2223869085.529449,
+    "BM_Crc32c/4096.real_time_ns": 1844.4431520297062,
+    "BM_Crc32c/65536.bytes_per_second": 2221630500.6544724,
+    "BM_Crc32c/65536.real_time_ns": 29538.28166448984
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32c/1024.bytes_per_second": 2195116362.408806,
+    "BM_Crc32c/1024.real_time_ns": 467.1099423334711,
+    "BM_Crc32c/1048576.bytes_per_second": 2221787105.5237308,
+    "BM_Crc32c/1048576.real_time_ns": 473184.52363393886,
+    "BM_Crc32c/16384.bytes_per_second": 2224041327.7784286,
+    "BM_Crc32c/16384.real_time_ns": 7376.931253646611,
+    "BM_Crc32c/262144.bytes_per_second": 2231127851.450694,
+    "BM_Crc32c/262144.real_time_ns": 117803.47166562846,
+    "BM_Crc32c/4096.bytes_per_second": 2223714466.2196927,
+    "BM_Crc32c/4096.real_time_ns": 1845.66578710575,
+    "BM_Crc32c/65536.bytes_per_second": 2227611158.336309,
+    "BM_Crc32c/65536.real_time_ns": 29474.662848220298
+   },
+   "wall_s": 0
+  },
+  {
+   "counters": {
+    "BM_Crc32c/1024.bytes_per_second": 2195563901.609142,
+    "BM_Crc32c/1024.real_time_ns": 467.0886000817685,
+    "BM_Crc32c/1048576.bytes_per_second": 2228009271.660084,
+    "BM_Crc32c/1048576.real_time_ns": 471508.2388341065,
+    "BM_Crc32c/16384.bytes_per_second": 2223459356.9148765,
+    "BM_Crc32c/16384.real_time_ns": 7384.474942464208,
+    "BM_Crc32c/262144.bytes_per_second": 2230599330.1432447,
+    "BM_Crc32c/262144.real_time_ns": 117707.5982708622,
+    "BM_Crc32c/4096.bytes_per_second": 2224285874.98502,
+    "BM_Crc32c/4096.real_time_ns": 1844.0098340304082,
+    "BM_Crc32c/65536.bytes_per_second": 2217863335.9034686,
+    "BM_Crc32c/65536.real_time_ns": 29605.261006640558
+   },
+   "wall_s": 0
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T04:22:29Z",
+ "summary": {
+  "max": {
+   "BM_Crc32c/1024.bytes_per_second": 2195587901.569419,
+   "BM_Crc32c/1024.real_time_ns": 467.9571913694067,
+   "BM_Crc32c/1048576.bytes_per_second": 2228009271.660084,
+   "BM_Crc32c/1048576.real_time_ns": 473184.52363393886,
+   "BM_Crc32c/16384.bytes_per_second": 2227000732.1714573,
+   "BM_Crc32c/16384.real_time_ns": 7384.474942464208,
+   "BM_Crc32c/262144.bytes_per_second": 2231127851.450694,
+   "BM_Crc32c/262144.real_time_ns": 117973.59558475466,
+   "BM_Crc32c/4096.bytes_per_second": 2224285874.98502,
+   "BM_Crc32c/4096.real_time_ns": 1847.3273159765538,
+   "BM_Crc32c/65536.bytes_per_second": 2227611158.336309,
+   "BM_Crc32c/65536.real_time_ns": 29605.261006640558,
+   "wall_s": 0
+  },
+  "median": {
+   "BM_Crc32c/1024.bytes_per_second": 2195358662.2035313,
+   "BM_Crc32c/1024.real_time_ns": 467.0886000817685,
+   "BM_Crc32c/1048576.bytes_per_second": 2225624463.1182065,
+   "BM_Crc32c/1048576.real_time_ns": 472214.8650696604,
+   "BM_Crc32c/16384.bytes_per_second": 2224101466.7942677,
+   "BM_Crc32c/16384.real_time_ns": 7376.931253646611,
+   "BM_Crc32c/262144.bytes_per_second": 2230193467.986086,
+   "BM_Crc32c/262144.real_time_ns": 117809.68104537504,
+   "BM_Crc32c/4096.bytes_per_second": 2223869085.529449,
+   "BM_Crc32c/4096.real_time_ns": 1844.4431520297062,
+   "BM_Crc32c/65536.bytes_per_second": 2224189481.950527,
+   "BM_Crc32c/65536.real_time_ns": 29506.61036029257,
+   "wall_s": 0
+  },
+  "min": {
+   "BM_Crc32c/1024.bytes_per_second": 2192746928.5614805,
+   "BM_Crc32c/1024.real_time_ns": 467.02937535656855,
+   "BM_Crc32c/1048576.bytes_per_second": 2221787105.5237308,
+   "BM_Crc32c/1048576.real_time_ns": 471508.2388341065,
+   "BM_Crc32c/16384.bytes_per_second": 2223459356.9148765,
+   "BM_Crc32c/16384.real_time_ns": 7367.156109484642,
+   "BM_Crc32c/262144.bytes_per_second": 2225117005.582496,
+   "BM_Crc32c/262144.real_time_ns": 117707.5982708622,
+   "BM_Crc32c/4096.bytes_per_second": 2220986014.9300437,
+   "BM_Crc32c/4096.real_time_ns": 1844.0098340304082,
+   "BM_Crc32c/65536.bytes_per_second": 2217863335.9034686,
+   "BM_Crc32c/65536.real_time_ns": 29474.662848220298,
+   "wall_s": 0
+  }
+ }
+}

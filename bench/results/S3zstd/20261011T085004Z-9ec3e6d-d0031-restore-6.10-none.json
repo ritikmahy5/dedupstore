@@ -1,0 +1,118 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "kernel-6.10",
+  "repository": "/tmp/dds-bench-10982306/r-none"
+ },
+ "experiment": "S3zstd",
+ "git_commit": "9ec3e6d354863a9e17727bc5c7dba80974455863",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0031",
+  "slurm_job": "10982306"
+ },
+ "params": {
+  "crc32c": "sse4.2",
+  "storage": "disk",
+  "verify": "no"
+ },
+ "run_id": "20261011T085004Z-9ec3e6d-d0031-restore-6.10-none",
+ "samples": [
+  {
+   "counters": {
+    "bytes": 1428609523,
+    "containers_per_gb": 282.092,
+    "containers_touched": 403,
+    "files": 84905,
+    "mb_per_s": 586.748,
+    "seconds": 2.43479
+   },
+   "wall_s": 2.43479
+  },
+  {
+   "counters": {
+    "bytes": 1428609523,
+    "containers_per_gb": 282.092,
+    "containers_touched": 403,
+    "files": 84905,
+    "mb_per_s": 561.857,
+    "seconds": 2.54265
+   },
+   "wall_s": 2.54265
+  },
+  {
+   "counters": {
+    "bytes": 1428609523,
+    "containers_per_gb": 282.092,
+    "containers_touched": 403,
+    "files": 84905,
+    "mb_per_s": 603.722,
+    "seconds": 2.36634
+   },
+   "wall_s": 2.36634
+  },
+  {
+   "counters": {
+    "bytes": 1428609523,
+    "containers_per_gb": 282.092,
+    "containers_touched": 403,
+    "files": 84905,
+    "mb_per_s": 595.547,
+    "seconds": 2.39882
+   },
+   "wall_s": 2.39882
+  },
+  {
+   "counters": {
+    "bytes": 1428609523,
+    "containers_per_gb": 282.092,
+    "containers_touched": 403,
+    "files": 84905,
+    "mb_per_s": 587.593,
+    "seconds": 2.43129
+   },
+   "wall_s": 2.43129
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-11T08:35:15Z",
+ "summary": {
+  "max": {
+   "bytes": 1428609523,
+   "containers_per_gb": 282.092,
+   "containers_touched": 403,
+   "files": 84905,
+   "mb_per_s": 603.722,
+   "seconds": 2.54265,
+   "wall_s": 2.54265
+  },
+  "median": {
+   "bytes": 1428609523,
+   "containers_per_gb": 282.092,
+   "containers_touched": 403,
+   "files": 84905,
+   "mb_per_s": 587.593,
+   "seconds": 2.43129,
+   "wall_s": 2.43129
+  },
+  "min": {
+   "bytes": 1428609523,
+   "containers_per_gb": 282.092,
+   "containers_touched": 403,
+   "files": 84905,
+   "mb_per_s": 561.857,
+   "seconds": 2.36634,
+   "wall_s": 2.36634
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "build": {
+  "compiler": "g++ (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2)",
+  "flags": "-O2 -g -DNDEBUG",
+  "preset": "release"
+ },
+ "dataset": {
+  "name": "synth",
+  "versions": 11
+ },
+ "experiment": "E6",
+ "git_commit": "620f2a6dc1bc1b1cee68a2a3f9581647987598b0",
+ "git_dirty": false,
+ "machine": {
+  "cores": 56,
+  "cpu": "Intel(R) Xeon(R) Platinum 8276 CPU @ 2.20GHz",
+  "fs_dataset": "xfs",
+  "fs_repo": "xfs",
+  "kernel": "5.14.0-362.13.1.el9_3.x86_64",
+  "mem_gb": 186,
+  "node": "d0020",
+  "slurm_job": "10949428"
+ },
+ "params": {
+  "mode": "sequential",
+  "storage": "mem",
+  "threads": 8
+ },
+ "run_id": "20261009T230307Z-620f2a6-d0020-sequential",
+ "samples": [
+  {
+   "counters": {
+    "gc_blobs_marked_per_s": 0,
+    "gc_busy_share": 0,
+    "gc_runs": 0,
+    "gc_runs_marking": 0,
+    "gc_runs_per_s": 0,
+    "ingest_mb_per_s": 4465.06,
+    "logical_bytes": 35434963187,
+    "seconds": 7.93605
+   },
+   "wall_s": 7.93605
+  },
+  {
+   "counters": {
+    "gc_blobs_marked_per_s": 0,
+    "gc_busy_share": 0,
+    "gc_runs": 0,
+    "gc_runs_marking": 0,
+    "gc_runs_per_s": 0,
+    "ingest_mb_per_s": 4472.87,
+    "logical_bytes": 35434963187,
+    "seconds": 7.9222
+   },
+   "wall_s": 7.9222
+  },
+  {
+   "counters": {
+    "gc_blobs_marked_per_s": 0,
+    "gc_busy_share": 0,
+    "gc_runs": 0,
+    "gc_runs_marking": 0,
+    "gc_runs_per_s": 0,
+    "ingest_mb_per_s": 4619.64,
+    "logical_bytes": 35434963187,
+    "seconds": 7.67051
+   },
+   "wall_s": 7.67051
+  },
+  {
+   "counters": {
+    "gc_blobs_marked_per_s": 0,
+    "gc_busy_share": 0,
+    "gc_runs": 0,
+    "gc_runs_marking": 0,
+    "gc_runs_per_s": 0,
+    "ingest_mb_per_s": 4757.59,
+    "logical_bytes": 35434963187,
+    "seconds": 7.44809
+   },
+   "wall_s": 7.44809
+  },
+  {
+   "counters": {
+    "gc_blobs_marked_per_s": 0,
+    "gc_busy_share": 0,
+    "gc_runs": 0,
+    "gc_runs_marking": 0,
+    "gc_runs_per_s": 0,
+    "ingest_mb_per_s": 4785.64,
+    "logical_bytes": 35434963187,
+    "seconds": 7.40444
+   },
+   "wall_s": 7.40444
+  }
+ ],
+ "schema": 1,
+ "started_at": "2026-10-09T22:58:39Z",
+ "summary": {
+  "max": {
+   "gc_blobs_marked_per_s": 0,
+   "gc_busy_share": 0,
+   "gc_runs": 0,
+   "gc_runs_marking": 0,
+   "gc_runs_per_s": 0,
+   "ingest_mb_per_s": 4785.64,
+   "logical_bytes": 35434963187,
+   "seconds": 7.93605,
+   "wall_s": 7.93605
+  },
+  "median": {
+   "gc_blobs_marked_per_s": 0,
+   "gc_busy_share": 0,
+   "gc_runs": 0,
+   "gc_runs_marking": 0,
+   "gc_runs_per_s": 0,
+   "ingest_mb_per_s": 4619.64,
+   "logical_bytes": 35434963187,
+   "seconds": 7.67051,
+   "wall_s": 7.67051
+  },
+  "min": {
+   "gc_blobs_marked_per_s": 0,
+   "gc_busy_share": 0,
+   "gc_runs": 0,
+   "gc_runs_marking": 0,
+   "gc_runs_per_s": 0,
+   "ingest_mb_per_s": 4465.06,
+   "logical_bytes": 35434963187,
+   "seconds": 7.40444,
+   "wall_s": 7.40444
+  }
+ }
+}
