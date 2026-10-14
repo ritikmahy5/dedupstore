@@ -38,14 +38,16 @@ std::optional<BackupQueue::Task> BackupQueue::Pop() {
   if (!segments_.empty()) {
     Segment* s = segments_.front();
     segments_.pop_front();
-    return Task(s);
+    return std::optional<Task>(std::in_place, s);
   }
   if (batches_.empty()) return std::nullopt;  // closed, empty, and every batch done
   FileBatch batch = std::move(batches_.front());
   batches_.pop_front();
   ++active_;
   room_.notify_one();
-  return Task(std::move(batch));
+  // Built in place: moving a temporary Task into the optional makes GCC 13 at -O1 report the
+  // vector's members as maybe uninitialized (-Wmaybe-uninitialized inside std::variant).
+  return std::optional<Task>(std::in_place, std::move(batch));
 }
 
 Segment* BackupQueue::NextWhileWaiting(const Segment* mine) {

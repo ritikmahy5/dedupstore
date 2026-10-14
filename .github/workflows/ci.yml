@@ -51,7 +51,11 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y ninja-build clang clang-tidy
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build clang python3-venv
+      - name: Install the pinned clang-tidy (D61)
+        # Ubuntu's clang-tidy is another version, with other checks and false positives; "clean"
+        # means clean under the pinned one, as locally.
+        run: scripts/dev/setup_tools.sh
       - run: cmake --preset tidy
         env: { CC: clang, CXX: clang++ }
       - run: cmake --build --preset tidy

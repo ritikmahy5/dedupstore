@@ -115,7 +115,11 @@ Status FileStorer::StoreSplit(FileTask& task, size_t writer, std::vector<std::by
   while (status.ok() && !end) {
     // Copy the chunks for another worker only if one is idle: otherwise storing them here, straight
     // from the read buffer, costs no copy, as when every worker has a large file of its own.
-    Run run{std::make_unique<Segment>(), queue_.HasIdleThread()};
+    // Assigned, not brace-initialized: clang-tidy 19.1's analyzer, with libstdc++, loses the
+    // segment's destructor on the `break` below and reports a leak that is not there.
+    Run run;
+    run.segment = std::make_unique<Segment>();
+    run.queued = queue_.HasIdleThread();
     status = ReadRun(reader, *run.segment, run.queued, task.path, writer, end);
     if (!status.ok() || (run.segment->lengths.empty() && run.segment->refs.empty())) break;
     if (run.queued && !queue_.TryPushSegment(run.segment.get())) {

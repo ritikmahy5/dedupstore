@@ -1340,6 +1340,33 @@ ingest 1.123 times as fast for the 8 GiB file and 1.136 for the checkpoints, eve
 the splitter's time outside reading and chunking fell from about 2.1 to 2.4 s to about 1.2 to
 1.4 s, and the split file ran at 2.41 times the unsplit one.
 
+**D110 — CI's Ubuntu jobs hold the code to GCC 13, clang 18 with libstdc++ 14, and the pinned
+clang-tidy.**
+The first CI run on GitHub (run 38455297297, 2026-10-13) failed every Linux build but GCC `debug`:
+Explorer's GCC 11.5 and macOS had accepted code that the ubuntu-24.04 runner's compilers reject.
+Each failure was reproduced in an `ubuntu:24.04` container with the runner's packages (GCC 13.3.0;
+clang 18.1.3, which selects GCC 14's libstdc++ because the runner also has `g++-14`; the pinned
+clang-tidy) and fixed there, every preset's suite passing:
+- Eight files used standard algorithms without `<algorithm>`, which libstdc++ 14 no longer
+  includes indirectly. Each now includes it.
+- `bench/synth`'s file-name buffer could truncate a 20-digit number (`-Wformat-truncation`). It
+  is sized for any `uint64_t`; the names used, 9 bytes, are unchanged, so the dataset is too (D93).
+- GCC 13 at `-O1` reported `-Wmaybe-uninitialized` inside `std::variant` when `BackupQueue::Pop`
+  moved a temporary `Task` into its `optional`. The `optional` is now built in place.
+- The tidy job installed Ubuntu's clang-tidy 18, not the pinned one (D61); it now runs
+  `scripts/dev/setup_tools.sh`. Under libstdc++ the pinned clang-tidy still reported two things
+  macOS did not: a widening cast after a multiplication in `chunk-stats` (each operand is cast
+  now) and a leak of the segment in a brace-initialized `Run` on a `break` that destroys it (the
+  members are assigned instead).
+- GCC's AddressSanitizer gave every call a fake stack frame at run time, and the 50,000-tree
+  pruning test took about 24 s (0.36 s with `ASAN_OPTIONS=detect_stack_use_after_return=0`; under
+  1.5 s in every other configuration, 0.38 s with clang's sanitizer), past its harness's 10 s wait
+  for a reply. Stack samples were all inside the sanitizer's `FakeStack::Allocate`, called from
+  unrelated code. The wait is a bound against hanging, not a speed claim, so it is 120 s, and the
+  sanitizer keeps checking for use after return.
+Revisit if: the runner image changes its compilers, or a sanitizer configuration needs a bound
+that long elsewhere (then the deep-chain test should shrink instead).
+
 ## License
 
 **D43 — License: MIT (`LICENSE`).**

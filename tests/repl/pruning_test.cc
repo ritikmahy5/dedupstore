@@ -64,7 +64,9 @@ class ScriptedSession {
     ASSERT_TRUE(WriteFrame(*sender_, type, payload).ok());
   }
   Frame Next() {
-    auto f = ReadFrame(*sender_, milliseconds(10000));
+    // A bound against hanging, not a speed claim: with GCC's AddressSanitizer, whose run time
+    // gives every call a fake stack frame, the 50,000-tree chain below takes about 24 s.
+    auto f = ReadFrame(*sender_, milliseconds(120000));
     EXPECT_TRUE(f.ok()) << f.status().ToString();
     return f.ok() ? *f : Frame{};
   }

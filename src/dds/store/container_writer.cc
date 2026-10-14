@@ -1,5 +1,6 @@
 #include "dds/store/container_writer.h"
 
+#include <algorithm>
 #include <limits>
 
 #include "dds/common/crc32c.h"

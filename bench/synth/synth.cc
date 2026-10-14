@@ -184,7 +184,9 @@ class RandomSourceTree final : public SourceTree {
 
  private:
   static std::string Name(uint64_t i) {
-    char name[16];
+    // Room for any uint64_t ("f", 20 digits, NUL), so snprintf never truncates; OpenFile accepts
+    // only 9-byte names, so the names used are unchanged.
+    char name[24];
     std::snprintf(name, sizeof(name), "f%08llu", static_cast<unsigned long long>(i));
     return name;
   }

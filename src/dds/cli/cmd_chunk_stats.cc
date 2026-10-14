@@ -137,8 +137,8 @@ void PrintHuman(const std::string& path, const ChunkerParams& p, const ChunkStat
     const auto bar =
         static_cast<size_t>(50.0 * static_cast<double>(s.counts[i]) / static_cast<double>(peak));
     std::fprintf(stderr, "  [%8llu, %8llu) %10llu %s\n",
-                 static_cast<unsigned long long>(i * s.bucket_bytes),
-                 static_cast<unsigned long long>((i + 1) * s.bucket_bytes),
+                 static_cast<unsigned long long>(i) * s.bucket_bytes,
+                 static_cast<unsigned long long>(i + 1) * s.bucket_bytes,
                  static_cast<unsigned long long>(s.counts[i]), std::string(bar, '#').c_str());
   }
 }

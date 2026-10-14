@@ -35,9 +35,9 @@ Tests that need test hooks (sync points, mutations) or the lock-order checker ca
 with a reason in presets that lack them, so every preset's suite still passes.
 
 CI (`.github/workflows/ci.yml`) runs `debug`, `asan`, and `tsan` with GCC and clang on Ubuntu,
-`debug` and `asan` with Apple clang on macOS, the `tidy` preset, and every fuzz target for 60
-seconds on Ubuntu clang. CI runs on every push and pull request. Locally, the same presets are
-the definition of "passes".
+`debug` and `asan` with Apple clang on macOS, the `tidy` preset with the pinned clang-tidy (D61,
+D110), and every fuzz target for 60 seconds on Ubuntu clang. CI runs on every push and pull
+request. Locally, the same presets are the definition of "passes".
 
 ## 3. Test families
 
