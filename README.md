@@ -1,5 +1,7 @@
 # dedupstore
 
+[![ci](https://github.com/ritikmahy5/dedupstore/actions/workflows/ci.yml/badge.svg)](https://github.com/ritikmahy5/dedupstore/actions/workflows/ci.yml)
+
 A deduplicating, crash-safe snapshot store in C++20, with a concurrent garbage collector and
 WAN-efficient replication.
 
